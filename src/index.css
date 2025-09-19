@@ -1,0 +1,116 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Corporate Syndicated Finance Design System - All colors MUST be HSL */
+
+@layer base {
+  :root {
+    /* Corporate Finance Theme */
+    --background: 217 33% 6%;
+    --foreground: 210 40% 98%;
+
+    --card: 217 33% 8%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 217 33% 8%;
+    --popover-foreground: 210 40% 98%;
+
+    /* Corporate Blue Primary */
+    --primary: 217 91% 60%;
+    --primary-foreground: 217 33% 6%;
+    --primary-dark: 217 91% 45%;
+
+    /* Financial Green Secondary */
+    --secondary: 142 76% 45%;
+    --secondary-foreground: 217 33% 6%;
+    --secondary-dark: 142 76% 35%;
+
+    /* Premium Gold Accent */
+    --accent: 43 74% 66%;
+    --accent-foreground: 217 33% 6%;
+    --accent-dark: 43 74% 56%;
+
+    /* Muted Corporate Grays */
+    --muted: 217 33% 12%;
+    --muted-foreground: 217 13% 65%;
+
+    /* Status Colors */
+    --success: 142 76% 45%;
+    --warning: 43 74% 66%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 40% 98%;
+
+    /* Interface Elements */
+    --border: 217 33% 15%;
+    --input: 217 33% 12%;
+    --ring: 217 91% 60%;
+    --radius: 0.75rem;
+
+    /* Custom Gradients */
+    --gradient-corporate: linear-gradient(135deg, hsl(217 91% 60%) 0%, hsl(217 91% 45%) 100%);
+    --gradient-finance: linear-gradient(135deg, hsl(142 76% 45%) 0%, hsl(142 76% 35%) 100%);
+    --gradient-premium: linear-gradient(135deg, hsl(43 74% 66%) 0%, hsl(43 74% 56%) 100%);
+    --gradient-encrypted: linear-gradient(90deg, hsl(217 91% 60%) 0%, hsl(217 33% 15%) 50%, hsl(217 91% 60%) 100%);
+
+    /* Animations */
+    --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+    /* Sidebar colors - keeping existing structure */
+    --sidebar-background: 217 33% 8%;
+    --sidebar-foreground: 210 40% 98%;
+    --sidebar-primary: 217 91% 60%;
+    --sidebar-primary-foreground: 217 33% 6%;
+    --sidebar-accent: 217 33% 12%;
+    --sidebar-accent-foreground: 210 40% 98%;
+    --sidebar-border: 217 33% 15%;
+    --sidebar-ring: 217 91% 60%;
+
+    /* Custom Shadows */
+    --shadow-elegant: 0 10px 30px -10px hsl(var(--primary) / 0.3);
+    --shadow-glow: 0 0 40px hsl(var(--primary) / 0.4);
+    --shadow-corporate: 0 4px 20px hsl(var(--primary) / 0.15);
+  }
+
+  .dark {
+    /* Dark mode inherits the same corporate theme */
+    --background: 217 33% 6%;
+    --foreground: 210 40% 98%;
+    --card: 217 33% 8%;
+    --card-foreground: 210 40% 98%;
+    --popover: 217 33% 8%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 217 91% 60%;
+    --primary-foreground: 217 33% 6%;
+    --secondary: 142 76% 45%;
+    --secondary-foreground: 217 33% 6%;
+    --muted: 217 33% 12%;
+    --muted-foreground: 217 13% 65%;
+    --accent: 43 74% 66%;
+    --accent-foreground: 217 33% 6%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 217 33% 15%;
+    --input: 217 33% 12%;
+    --ring: 217 91% 60%;
+    --sidebar-background: 217 33% 6%;
+    --sidebar-foreground: 210 40% 98%;
+    --sidebar-primary: 217 91% 60%;
+    --sidebar-primary-foreground: 217 33% 6%;
+    --sidebar-accent: 217 33% 10%;
+    --sidebar-accent-foreground: 210 40% 98%;
+    --sidebar-border: 217 33% 15%;
+    --sidebar-ring: 217 91% 60%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
